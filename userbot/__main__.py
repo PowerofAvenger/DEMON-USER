@@ -15,7 +15,7 @@ from userbot.utils import load_assistant, load_module, start_assistant
 TELE = Var.PRIVATE_GROUP_ID
 BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
 LOAD_MYBOT = Var.LOAD_MYBOT
-sed = logging.getLogger("X-USERBOT")
+sed = logging.getLogger("DEMON-USERBOT")
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -27,7 +27,7 @@ async def startup_log_all_done():
     try:
         await bot.send_message(
             TELE,
-            f"**X-USERBOT has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
+            f"**DEMON-USERBOT has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
         )
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
@@ -61,9 +61,9 @@ for name in files:
          load_module(shortname.replace(".py", ""))
         except Exception:
             pass
-print("X-USERBOT has been deployed! ")
+print("DEMON-USERBOT has been deployed! ")
 
-print("Setting up X-USERBOT")
+print("Setting up DEMON-USERBOT")
 
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
@@ -81,19 +81,19 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
                 pass
     sed.info("X-USERBOT Has Been Deployed Successfully !")
     sed.info("╔════❰ Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ ❱═❍⊱❁۪۪")
-    sed.info("║┣⪼ Ⲟⲱⲛⲉʀ - x-userbot ᴜꜱᴇʀ ")
+    sed.info("║┣⪼ Ⲟⲱⲛⲉʀ - Demon-userbot ᴜꜱᴇʀ ")
     sed.info("║┣⪼ Ⲋⲧⲁⲧυⲋ - Ⲟⲛⳑⲓⲛⲉ")
     sed.info("║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ - 1.2.0")   
     sed.info("║┣⪼ Ⳙⲣⲧⲓⲙⲉ - 00h:00m:4s ")
     sed.info("║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ - 0.006")
     sed.info("║┣⪼ Ⲣⲩⲧⲏⲟⲛ - 3.9.2")
     sed.info("║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ - 1.17.0 ")
-    sed.info("║┣⪼ ✨X-USERBOT✨")
+    sed.info("║┣⪼ ✨Demon-USERBOT✨")
     sed.info("║╰━━━━━━━━━━━━━━━➣ ")
     sed.info("╚══════════════════❍⊱❁۪۪")
 else:
-    sed.info("X-USERBOT Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @daisy_johnson_support For Any Support Or Doubts")
+    sed.info("DEMON-USERBOT Has Been Installed Sucessfully !")
+    sed.info("You Can Visit @demon_ub_support For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
