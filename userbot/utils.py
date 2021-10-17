@@ -423,7 +423,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/lightning_support_group)"
+            link = "[Here](https://t.me/demon_ub_support)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -434,7 +434,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN Lightning USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN DEMON USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -793,7 +793,7 @@ def start_assistant(shortname):
         sys.modules[
             "userbot.plugins.assistant" + "Initialising Lightning" + shortname
         ] = mod
-        sedprint.info("X-USERBOT Has imported " + shortname)
+        sedprint.info("DEMON-USERBOT Has imported " + shortname)
 
 
 def load_assistant(shortname):
@@ -809,8 +809,8 @@ def load_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising Lightning.")
-        print("Lightning - Imported " + shortname)
+        print("Initialising DEMON.")
+        print("DEMON - Imported " + shortname)
     else:
         import importlib
         import sys
@@ -823,4 +823,4 @@ def load_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant." + shortname] = mod
-        print("X-USERBOT Has imported " + shortname)
+        print("DEMON-USERBOT Has imported " + shortname)
