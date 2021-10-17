@@ -1,6 +1,6 @@
 {
-    "name": "X-USERBOT - UserBot",
-    "description": "An advanced Telethon Userbot, from @godkiller_mark2_sinx",
+    "name": "DEMON USERBOT - UserBot",
+    "description": "An advanced Telethon Userbot, from @godkiller_mark2_ironman",
     "logo": "",
     "keywords": [
      "telegram",
@@ -9,9 +9,9 @@
      "modular",
      "productivity"
     ],
-    "repository": "https://github.com/PowerofAvenger/SinnerUserbot",
-    "website": "https://github.com/PowerofAvenger/SinnerUserbot",
-    "success_url": "https://github.com/PowerofAvenger/SinnerUserbot",
+    "repository": "https://github.com/PowerofAvenger/DEMON-USERBOT",
+    "website": "https://github.com/PowerofAvenger/DEMON-USERBOT",
+    "success_url": "https://github.com/PowerofAvenger/DEMON-USERBOT",
     "stack": "container",
     "env": {
      "APP_ID": {
