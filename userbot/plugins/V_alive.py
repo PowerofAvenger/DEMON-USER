@@ -78,8 +78,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@borg.on(lightning_cmd(pattern=r"valive"))
-@borg.on(sudo_cmd(pattern=r"valive", allow_sudo=True))
+@borg.on(lightning_cmd(pattern=r"alive"))
+@borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
 
 async def alive(e):
 
@@ -142,8 +142,8 @@ CMD_HELP.update(
 
     {
 
-        "valive": "**VALive**\
-\n\n**Syntax : **`.valive`\
+        "valive": "**ALive**\
+\n\n**Syntax : **`.alive`\
 \n**Usage :** Check if 𐌵sᥱrδ᧐ᴛ is alive"
 
     }
