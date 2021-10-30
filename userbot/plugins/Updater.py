@@ -19,8 +19,8 @@ requirements_path = path.join(
 
 HEROKU_API_KEY = config.HEROKU_API_KEY
 HEROKU_APP_NAME = config.HEROKU_APP_NAME
-GIT_REPO_NAME = "Black-lightning"
-UPSTREAM_REPO_URL = "https://github.com/Keinshin/Black-Lightning"
+GIT_REPO_NAME = "DEMON-USERBOT"
+UPSTREAM_REPO_URL = "https://github.com/POWEROFAVENGER/DEMON-USERBOT"
 
 async def gen_chlog(repo, diff):
     ch_log = ''
@@ -127,7 +127,7 @@ async def upstream(ups):
         await ups.edit(
             '`Force-Updating to latest stable code, please wait sur😅😅...`')
     else:
-        await ups.edit('`Updating your` 𝐁𝐥𝐚𝐜𝐤-𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 `please wait for a while`')
+        await ups.edit('`Updating your` Demon 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 `please wait for a while`')
         await asyncio.sleep(4)
         await ups.edit('Updated Sur✨\nRestarting it please have patience and enjoy botless life for a while\nIncase restart structs join [𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠 𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/lightning_support_group) ')
         await borg.disconnect()
@@ -172,7 +172,7 @@ async def upstream(ups):
             repo.__del__()
             return
         await ups.edit('`Sync Verified Successfully 🙂🙂\n'
-                       'Restarting, please wait a min ,then type .alive to check if I alive !! Else Go to [𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠 𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/lightning_support_group)`')
+                       'Restarting, please wait a min ,then type .alive to check if I alive !! Else Go to [Demon 𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/demon_ub_support)`')
     else:
         # Classic Updater, pretty straightforward.
         try:
