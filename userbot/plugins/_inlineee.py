@@ -588,10 +588,9 @@ async def lmaao(lightning):
             buttons=[
                 [custom.Button.inline("Help Menu😎", data="what?"),
                 custom.Button.inline("Ping🙃", data="bitch")],
-                [Button.url("Support Group🥺", "https://t.me/lightning_support_group")],
-                [Button.url("Help Article🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [Button.url("Support Group🥺", "https://t.me/demon_ub_support")],
                 [Button.url("Get Updates😅",
-                    "https://t.me/lightning_support_group" ,
+                    "https://t.me/demon_ub_support" ,
                     )
                 ], 
             ]
@@ -617,8 +616,8 @@ async def ho(event):
     await event.answer("( ͡🔥 ͜ʖ ͡🔥)", cache_time=0, alert=False)
     # This Is Copy of Above Code. (C) @SpEcHiDe
     buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
-    ho = f"""Black Lightning Is Here With Stunning Help !\n
-In Case Any Problem [𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group) \nTottal Plugs( ͡🔥 ͜ʖ ͡🔥): {len(CMD_LIST)}"""
+    ho = f"""Demon 😈😈 Is Here With Stunning Help !\n
+In Case Any Problem [Demon Userbot](https://t.me/demon_ub_support) \nTottal Plugs( ͡🔥 ͜ʖ ͡🔥): {len(CMD_LIST)}"""
     await event.edit(message=ho, buttons=buttons)
 
 
