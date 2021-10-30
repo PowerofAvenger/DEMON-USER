@@ -38,6 +38,7 @@ async def _(event):
         "😖 \n/\\_,💦_😋  \n  //         //        \\",
         "  😭      ☺️ \n  /|\   /(👶)\ \n  /!\   / \ ",
         "Abee aur kitna dekhoge be besharmi ki bhi hadd hoti hai..,The End 😂...",
+        "Brought to you by 😈😈 Demon Userbot 😈😈",
     ]
 
     for i in animation_ttl:
