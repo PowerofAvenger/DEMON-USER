@@ -58,7 +58,7 @@ DELETE_TIMEOUT = 5
 
 thumb_image_path = "./resources/541200.png"
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιgнтηιηg мαѕтєя"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else " Demon Master"
 LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
 
@@ -185,7 +185,7 @@ async def _(event):
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
 if BOT_MSG is None:
-    BOT_LIT = f"Hey! This is adavanced PM Protection by [𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group). "
+    BOT_LIT = f"Hey! This is adavanced PM Protection by [😈😈 Demon 😈😈](https://t.me/demon_ub_support). "
 else:
     BOT_LIT = BOT_MSG   
 
@@ -196,8 +196,8 @@ LIGHTNING_BOT_PIC = os.environ.get("LIGHTNING_BOT_PIC", None)
 if LIGHTNING_WARN is None:
     WARNING = (
     f"**{BOT_LIT}"
-    f"** I'm here to protect {LIGHTNINGUSER}'s PM from spamming.**\n\n"
-    f"**My master {LIGHTNINGUSER} is busy right now !** \n"
+    f"** I'm here to protect {Demon User}'s PM from spamming.**\n\n"
+    f"**My master {Demon User} is busy right now !** \n"
     f"Please let me know why you came here. "
     f"**Choose your desired reason from below.**  \n\n"
     f"**But don't spam otherwise you will be blocked**\n\n"
@@ -209,7 +209,7 @@ else:
 LIGHTNING_BOT_PIC = (
     LIGHTNING_BOT_PIC
     if LIGHTNING_BOT_PIC
-    else "https://telegra.ph/file/ff90ed0b44221a7b438b7.jpg"
+    else "https://telegra.ph/file/d465c29469079aa64c7c1.jpg"
 )
 
 
@@ -242,10 +242,9 @@ async def inline_handler(lightning):
             buttons=[
                 [custom.Button.inline("Help Menu😎", data="what?"),
                 custom.Button.inline("Ping🙃", data="bitch")],
-                [Button.url("Support Group🥺", "https://t.me/lightning_support_group")],
-                [Button.url("Help Article🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [Button.url("Support Group🥺", "https://t.me/demon_ub_support")],
                 [Button.url("Get Updates😅",
-                    "https://t.me/black_lightning_channel"
+                    "https://t.me/demon_off_topic"
                     )
                 ], 
             ],
@@ -316,12 +315,12 @@ async def lightning_pugins_query_hndlr(lightning):
        
        lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
        lightning_is_best = lightning_help_strin 
-       lightning_is_best += "\n\n**In Case Any Problem**[𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group) ".format(light_pulu_name)
+       lightning_is_best += "\n\n**In Case Any Problem**[Demon 😈😈](https://t.me/demon_ub_support) ".format(light_pulu_name)
     
     else:
-       lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n\n**Ask at @Lightning_Support_Group"
+       lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n\n**Ask at @demon_ub_support"
        lightning_is_best = lightning_help_strin 
-       lightning_is_best += "\n\n**In Case Any Problem @Lightning_support_Group** ".format(light_pulu_name)
+       lightning_is_best += "\n\n**In Case Any Problem @demon_ub_support** ".format(light_pulu_name)
     if len(lightning_is_best) >= 4096:
           keinshin = "`Wait.( ͡🔥 ͜ʖ ͡🔥)`"
           await lightning.answer(keinshin, cache_time=0, alert=True)
@@ -366,7 +365,7 @@ async def lightning_pugins_query_hndlr(lightning):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"what?")))
 async def what(lightning):
     if lightning.query.user_id == bot.uid:
-        fck_bit = "**Black Lightning Heres With The Detailed Help For CMDs** 😉😉 ! "
+        fck_bit = "**Demon 😈😈 is Here With The Detailed Help For CMDs** 😉😉 ! "
         buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
         await lightning.edit(fck_bit, buttons=buttons)
     else:
