@@ -85,8 +85,8 @@ async def reply_id(event):
         reply_to_id = event.reply_to_msg_id
     return reply_to_id
 
-@borg.on(lightning_cmd(outgoing=True, pattern="salive"))
-@borg.on(sudo_cmd(pattern=r"salive", allow_sudo=True))
+@borg.on(lightning_cmd(outgoing=True, pattern="alive"))
+@borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
 async def amireallyalive(salive):
     """ For .alive command, check if the bot is running.  """
     if ALIVE_PHOTTO:
@@ -282,23 +282,11 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "вℓα¢к ℓιgнтηιηg"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DEMON USERBOT"
 
 
 CMD_HELP.update(
     {
         "alive": "**alive**\
-        \n\n**Syntax : **`.halive For Hellbot's Alive`\
-        \n**Function : **__ Hellbot's Alive__\
-        \nFor above two commands use `.bigspam` instead of spam for spamming more than 50 messages\
-        \n\n**Syntax : **`.falive`\
-        \n**Function : **__ Fridays's Alive.__\
-        \n\n**Syntax : **`.halive `\
-        \n**Function : **__ .hell Uerbot's Alive.__\
-        \n\n**Syntax : **`.alive `\
-        \n**Function : **__ .Lightning Uerbot's Alive.__\
-        \n\n**Syntax : **`.awake `\
-        \n**Function : **__ .Awake.__\
-        \n\n\n**NOTE : All Credits To Thier Respective !!**"
-    }
+       }
 )
