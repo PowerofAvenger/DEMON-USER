@@ -28,7 +28,7 @@ lightning = ALIVE_NAME
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"**Superfban coming in order of {lightning}**...")
+    await event.edit(f"**Superfban in order of {lightning}**...")
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
@@ -50,7 +50,7 @@ async def _(event):
                 REASON = arg[2]
             else:
                 FBAN = arg[1]
-                REASON = " #Superfban_Lightning_Userbot"
+                REASON = " #Superfban_DEMON_USERBOT"
         else:
             FBAN = previous_message.sender_id
             REASON = event.text.split(" ", maxsplit=1)[1]
@@ -63,15 +63,15 @@ async def _(event):
             REASON = arg[2]
         else:
             FBAN = arg[1]
-            REASON = " #Superfban_Lightning_Userbot "
+            REASON = " #Superfban_DEMON_USERBOT "
     try:
         int(FBAN)
 # Dear kanger if you remove id or username which is given below so this plugin will not work...
-        if int(FBAN) == 1232461895 or int(FBAN) == 1754865180 or int(FBAN) == 1311769691 :     
+        if int(FBAN) == 1002909375 or int(FBAN) == 2017191254 :     
             await event.edit("Sorry dear but you are trying to ban GOD....")
             return
     except BaseException:
-        if FBAN == "@hacker11000" or FBAN == "@paramatin7" or FBAN == "@keinshin" :
+        if FBAN == "@smitmorexd" or FBAN == "@dooms_day_xd" :
             await event.edit("Sorry Dear but you are trying to ban God....")
             return
     if Config.PM_LOGGR_BOT_API_ID  :
@@ -131,7 +131,7 @@ async def _(event):
         if len(fedList) == 0:
             await event.edit("Something went wrong.")
             return
-    await event.edit(f"BL banning you in **{len(fedList)}** for **{lightning}** .")
+    await event.edit(f"DEMON banning you in **{len(fedList)}** for **{lightning}** .")
     try:
         await bot.send_message(chat, f"/start")
     except BaseException:
@@ -153,7 +153,7 @@ async def _(event):
         await bot.send_message(chat, f"/fban {FBAN} {REASON}")
         await asyncio.sleep(3)
     await event.edit(
-        f"Superfban completed, Affected **{len(fedList) - exCount}** feds.\n\n#Lightning_Userbot"
+        f"Superfban completed, Affected **{len(fedList) - exCount}** feds.\n\n#Demon_Userbot"
     )
 
 
@@ -163,7 +163,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"**Bl unfban you in order of {lightning}**...")
+    await event.edit(f"**Unfban you in order of {lightning}**...")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         FBAN = previous_message.sender_id
