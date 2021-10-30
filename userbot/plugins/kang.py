@@ -33,6 +33,7 @@ KANGING_STR = [
     "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
     "Imprisoning this sticker...",
     "Mr.Steal Your Sticker is stealing this sticker... ",
+    "Chura ke stickerrr tera, mai to chala 😂😂...",
 ]
 
 lightning = Var.CUSTOM_STICKER_PACK_NAME
@@ -103,11 +104,11 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_lightning_{pack}"
+        packname = f"HB_{user.username}_Demon_{pack}"
         packnick = (
             f"{lightning} Vol.{pack}"
             if lightning
-            else f"@{user.username}'s lightning Vol.{pack}"
+            else f"@{user.username}'s Demon Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -143,7 +144,7 @@ async def kang(args):
                     packnick = (
                         f"{lightning} Vol.{pack}"
                         if lightning
-                        else f"@{user.username}'s lightning Vol.{pack}"
+                        else f"@{user.username}'s Demon.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
