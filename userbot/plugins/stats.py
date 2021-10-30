@@ -7,7 +7,7 @@ from telethon.tl.types import Channel, Chat, User
 from . import *
 
 
-@borg.on(lightning_cmd(pattern=r"stats"))
+@borg.on(lightning_cmd(pattern="stats"))
 async def stats(
     event: NewMessage.Event,
 ) -> None:
@@ -86,7 +86,7 @@ def make_mention(user):
 
 
 def inline_mention(user):
-    full_name = user_full_name(user) or "Hêll"
+    full_name = user_full_name(user) or "Demon"
     return f"[{full_name}](tg://user?id={user.id})"
 
 
@@ -96,6 +96,6 @@ def user_full_name(user):
     return " ".join(names)
 
 
-@borg.on(lightning_cmd(pattern=r"stats")).add_command(
+@borg.on(lightning_cmd(pattern="stats")).add_command(
   'stats', None, 'Shows you the count of your groups, channels, private chats, etc.'
 ).add()
