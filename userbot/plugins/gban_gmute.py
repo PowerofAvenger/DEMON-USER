@@ -37,7 +37,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "Error... Please report at @lightning_support_group", str(err)
+                "Error... Please report at @demon_ub_support", str(err)
             )
     return user_obj, extra
 
@@ -83,7 +83,7 @@ async def gben(userbot):
     except:
         return await dark.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1311769691:
+        if user.id == 2017191254:
             return await dark.edit(f"**You nub nibba..I can't gban my dev..**")
         try:
             from userbot.plugins.sql_helper.gmute_sql import gmute
@@ -147,7 +147,7 @@ async def gunben(userbot):
     except:
         return await dark.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 1311769691:
+        if user.id == 2017191254:
             return await dark.edit(
                 "**You nub nibba..can't gban or ungban my dev... !**"
             )
@@ -179,7 +179,7 @@ async def gunben(userbot):
     except:
         pass
     return await dark.edit(
-        f"**Ungbanned this noon nibba..getting him another chance... ; USER - [{user.first_name}](tg://user?id={user.id}) CHATS : {a} **"
+        f"**Ungbanned this noon nibba..giving him another chance... ; USER - [{user.first_name}](tg://user?id={user.id}) CHATS : {a} **"
     )
 
 
