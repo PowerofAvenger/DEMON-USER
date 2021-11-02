@@ -167,7 +167,7 @@ async def promote(event):
     # Try to promote if current user is admin or creator
     try:
         await event.client(EditAdminRequest(event.chat_id, user.id, new_rights, rank))
-        await event.reply("`Promoted Successfully! Now gib Party`")
+        await event.reply("`Promoted Successfully! Now gib 1 Crore rupees. Else gey")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -222,7 +222,7 @@ async def demote(event):
     except BadRequestError:
         await event.reply("Me No Permission 🤔")
         return
-    await event.reply("`Demoted this Guy Successfully!`")
+    await event.reply("`Demoted this Guy Successfully!,\n Luade lag gaye`")
 
 
 @tgbot.on(events.NewMessage(pattern="^/pin(?: |$)(.*)"))
