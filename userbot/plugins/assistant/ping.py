@@ -48,5 +48,5 @@ async def _(event):
     uptime = get_readable_time((time.time() - Lastupdate))
     await tgbot.send_message(
         event.chat_id,
-        f"**╔═══╗╔══╗╔═╗─╔╗╔═══╗\n║╔═╗║╚╣─╝║║╚╗║║║╔═╗║\n║╚═╝║─║║─║╔╗╚╝║║║─╚╝\n║╔══╝─║║─║║╚╗║║║║╔═╗\n║║───╔╣─╗║║─║║║║╚╩═║\n╚╝───╚══╝╚╝─╚═╝╚═══╝**\n ➲ `{ms}` \n ➲ `{uptime}`",
+        f"**[╔D╗╔E╗╔M╗╔O╗╔N╗ ╔U╗╔S╗╔E╗╔R╗╔B╗╔O╗╔T╗ \n ╚D╝╚E╝╚M╝╚O╝╚N╝ ╚U╝╚S╝╚E╝╚R╝╚B╝╚O╝╚T╝](https://t.me/demon_Off_topic)**\n ➲ `{ms}` \n ➲ `{uptime}`",
     )
