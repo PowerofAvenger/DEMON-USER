@@ -11,7 +11,7 @@ from . import *
 async def stats(
     event: NewMessage.Event,
 ) -> None:
-    demon = await eor(event, "`Collecting stats...`")
+    hell = await eor(event, "`Collecting stats...`")
     start_time = time.time()
     private_chats = 0
     bots = 0
@@ -76,7 +76,7 @@ async def stats(
     response += f"🔱 **Unread:** {unread} \n"
     response += f"🔱 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"☣️   __It Took:__ {stop_time:.02f}s \n"
-    await demon.edit(response)
+    await hell.edit(response)
 
 
 def make_mention(user):
@@ -86,7 +86,7 @@ def make_mention(user):
 
 
 def inline_mention(user):
-    full_name = user_full_name(user) or "Demon"
+    full_name = user_full_name(user) or "Hêll"
     return f"[{full_name}](tg://user?id={user.id})"
 
 
@@ -96,6 +96,8 @@ def user_full_name(user):
     return " ".join(names)
 
 
-@borg.on(lightning_cmd(pattern="stats")).add_command(
+CmdHelp.update(
   'stats', None, 'Shows you the count of your groups, channels, private chats, etc.'
+
+  '✅ Harmless Module.'
 ).add()
