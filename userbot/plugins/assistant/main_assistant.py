@@ -39,7 +39,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [вℓα¢к ℓιgнтηιηg](https://t.me/lightning_support_group)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [DEMON USERBOT](https://t.me/demon_ub_support)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -65,8 +65,8 @@ async def start(event):
             link_preview=False,
             buttons=[
                 [custom.Button.inline("Deploy your BL ", data="deploy")],
-                [Button.url("Help Me ❓", "https://t.me/lightning_support_group")],
-                [Button.url("Lightning Web💫", "https://lightninguserbot.blogspot.com")],
+                [Button.url("Help Me ❓", "https://t.me/demon_ub_support")],
+                [Button.url("CREATOR", "https://t.me/smitmorexd")],
             ],
         )
 
@@ -80,16 +80,9 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Black Lightning In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy DEMON In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
-                [
-                    Button.url(
-                        "Deploy Tutorial 📺",
-                        "https://www.youtube.com/watch?v=GfZMqrCAqxI",
-                    )
-                ],
-                [Button.url("Need Help ❓", "https://t.me/lightning_support_group")],
-                [Button.url("Lightning Web💫", "https://lightninguserbot.blogspot.com")],
+                [Button.url("Need Help ❓", "https://t.me/demon_ub_support")],
             ],
         )
 
@@ -210,7 +203,7 @@ async def starkisnoob(event):
         await event.reply("Already Blacklisted")
     elif not is_he_added(user_id):
         add_nibba_in_db(user_id)
-        await event.reply("Blacklisted This Dumb Person")
+        await event.reply("Blacklisted This Nigga")
         await tgbot.send_message(
             user_id, "You Have Been Blacklisted And You Can't Message My Master Now."
         )
