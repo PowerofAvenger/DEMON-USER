@@ -332,7 +332,7 @@ async def lightning_pugins_query_hndlr(lightning):
         lightning_is_best = "Oh C'mon You Think You Can Touch This? ಠ╭╮ಠ!"
         await lightning.answer(lightning_is_best, cache_time=0, alert=True)
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"what?")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"what")))
 async def what(lightning):
     if lightning.query.user_id == bot.uid:
         fck_bit = "**DEMON Heres With The Detailed Help For CMDs** 😉😉 ! "
