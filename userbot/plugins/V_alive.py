@@ -106,7 +106,7 @@ async def alive(e):
 ║┣⪼ **Ⲧⲉⳑⲉⲧⲏⲟⲛ** - `{}` 
 ║┣⪼ [✨Demon 😈 𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨](https://github.com/powerofavenger/demon-userbot/)
 ║╰━━━━━━━━━━━━━━━➣ ╚══════════════════❍⊱❁۪۪
-[╔D╗╔E╗╔M╗╔O╗╔N╗ ╔U╗╔S╗╔E╗╔R╗╔B╗╔O╗╔T╗ \n ╚D╝╚E╝╚M╝╚O╝╚N╝ ╚U╝╚S╝╚E╝╚R╝╚B╝╚O╝╚T╝](https://t.me/demon_off_topic)
+ [╔D╗╔E╗╔M╗╔O╗╔N╗ \n ╚D╝╚E╝╚M╝╚O╝╚N╝ \n ╔U╗╔S╗╔E╗╔R╗╔B╗╔O╗╔T╗ \n  ╚U╝╚S╝╚E╝╚R╝╚B╝╚O╝╚T╝](https://t.me/demon_off_topic)
 """.format(
 
         ALIVE_MSG,
