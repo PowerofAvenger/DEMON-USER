@@ -1,3 +1,34 @@
+#    Copyright (C) 2021 KeinShin
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+"""Thanks To 
+@Midhun_xD
+@keinshin
+@Shivam_Patel
+@NOOBIzBack
+"""
+
+
+
+
+
+
+
+
+
 import os
 
 import re
@@ -27,7 +58,7 @@ DELETE_TIMEOUT = 5
 
 thumb_image_path = "./resources/541200.png"
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "DEMON USERBOT"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιgнтηιηg мαѕтєя"
 LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
 
@@ -154,7 +185,7 @@ async def _(event):
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
 if BOT_MSG is None:
-    BOT_LIT = f"Hey! This is adavanced PM Protection by [Demon Userbot](https://t.me/demon_ub_support). "
+    BOT_LIT = f"Hey! This is adavanced PM Protection by [𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group). "
 else:
     BOT_LIT = BOT_MSG   
 
@@ -170,7 +201,7 @@ if LIGHTNING_WARN is None:
     f"Please let me know why you came here. "
     f"**Choose your desired reason from below.**  \n\n"
     f"**But don't spam otherwise you will be blocked**\n\n"
-    f"**Also choose your Original reason Else you will be blocked [Don't Challenge]**"
+    f"**Also choose your Original reason Else you will be blocked [Don't Underestimate]**"
    )
 else:
     WARNING = LIGHTNING_WARN
@@ -178,7 +209,7 @@ else:
 LIGHTNING_BOT_PIC = (
     LIGHTNING_BOT_PIC
     if LIGHTNING_BOT_PIC
-    else "https://telegra.ph/file/90bd7e508ec8f0dbea8a9.jpg"
+    else "https://telegra.ph/file/ff90ed0b44221a7b438b7.jpg"
 )
 
 
@@ -211,10 +242,10 @@ async def inline_handler(lightning):
             buttons=[
                 [custom.Button.inline("Help Menu😎", data="what?"),
                 custom.Button.inline("Ping🙃", data="bitch")],
-                [Button.url("Support Group🥺", "https://t.me/demon_ub_support")],
-                [Button.url("Creator🤓", "https://t.me/dooms_day_xd")],
+                [Button.url("Support Group🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Help Article🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
                 [Button.url("Get Updates😅",
-                    "https://t.me/demon_ub_support"
+                    "https://t.me/black_lightning_channel"
                     )
                 ], 
             ],
@@ -226,7 +257,7 @@ async def inline_handler(lightning):
             file=LIGHTNING_BOT_PIC,
             text=WARNING,
             buttons=[
-                [custom.Button.inline("Wanna Spam Something?😉", data="Demon_is_here_cant_spam")],
+                [custom.Button.inline("Wanna Spam Something?😉", data="lightning_is_here_cant_spam")],
                 [
                     custom.Button.inline(
                         "My Friend❤️❤️",
@@ -276,7 +307,7 @@ async def lightning_pugins_query_hndlr(lightning):
 ) # Thanks To Friday Userbot
 async def lightning_pugins_query_hndlr(lightning):
     if not lightning.query.user_id == bot.uid:
-        how = "Do you Really Think This is for you? \nThen Make your own Demon User Bot and don't poke your nose in mine"
+        how = "Do you Really Think This is for you? \nThen Make your own Lightning Bot and don't poke your nose in mine"
         await lightning.answer(how, cache_time=0, alert=True)
         return
     light_pulu_name = lightning.data_match.group(1).decode("UTF-8")
@@ -285,24 +316,24 @@ async def lightning_pugins_query_hndlr(lightning):
        
        lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
        lightning_is_best = lightning_help_strin 
-       lightning_is_best += "\n\n**In Case Any Problem**[DEMON](https://t.me/demon_ub_support) ".format(light_pulu_name)
+       lightning_is_best += "\n\n**In Case Any Problem**[𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group) ".format(light_pulu_name)
     
     else:
-       lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n\n**Ask at @demon_ub_support"
+       lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n\n**Ask at @Lightning_Support_Group"
        lightning_is_best = lightning_help_strin 
-       lightning_is_best += "\n\n**In Case Any Problem @demon_ub_support** ".format(light_pulu_name)
+       lightning_is_best += "\n\n**In Case Any Problem @Lightning_support_Group** ".format(light_pulu_name)
     if len(lightning_is_best) >= 4096:
           keinshin = "`Wait.( ͡🔥 ͜ʖ ͡🔥)`"
           await lightning.answer(keinshin, cache_time=0, alert=True)
           out_file = lightning_is_best
-          lig_url = "https://t.me/dooms_day_xd"
+          lig_url = "https://del.dog/documents"
           r = requests.post(lig_url, data=out_file.encode("UTF-8")).json()
-          lig_url = f"https://t.me/dooms_day_xd{r['key']}"
+          lig_url = f"https://del.dog/{r['key']}"
           await lightning.edit(
                f"Pasted {light_pulu_name} to {lig_url}",
                link_preview=False,
                buttons=[
-                [custom.Button.inline("🇸‌🇵‌🇪‌🇨‌🇮‌🇦‌🇱‌", data="HEHE JOKE")],
+                [custom.Button.inline("🇸‌🇵‌🇪‌🇨‌🇮‌🇦‌🇱‌", data="krish")],
                 [custom.Button.inline("Ⴆαƈƙ 💢", data="lghtback")]],
          )
     else:
@@ -333,9 +364,9 @@ async def lightning_pugins_query_hndlr(lightning):
         await lightning.answer(lightning_is_best, cache_time=0, alert=True)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"what?")))
-async def what?(lightning):
+async def what(lightning):
     if lightning.query.user_id == bot.uid:
-        fck_bit = "**DEMON Heres With The Detailed Help For CMDs** 😉😉 ! "
+        fck_bit = "**Black Lightning Heres With The Detailed Help For CMDs** 😉😉 ! "
         buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
         await lightning.edit(fck_bit, buttons=buttons)
     else:
@@ -343,7 +374,7 @@ async def what?(lightning):
         await lightning.answer(txt, alert=True)
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"DEMON_is_here_cant_spam")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lightning_is_here_cant_spam")))
 async def lightning_is_better(lightning):
     if lightning.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
@@ -379,6 +410,21 @@ async def lightning_is_better(lightning):
     )
 
 
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"coming_soon")))
+async def lightning_is_better(lightning):
+    if lightning.query.user_id == bot.uid:
+        await lightning.edit(
+        "Which Alive You Wanna See?", buttons= [
+        (Button.inline("Friday Alive", data="falive"),
+        Button.inline("Dark Cobra Alive", data="dalive"))
+        , [Button.inline("Lightning Alive", data="alive"),
+            Button.inline("Hell Alive", data="halive")],[
+            Button.inline("Venom Alive", data="valive"
+            )
+            ]
+    ])
+
+
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"bitch")))
 
 async def lightning_is_better(lightning):
@@ -390,7 +436,7 @@ async def lightning_is_better(lightning):
         wews = bot.me.first_name
         weds = bot.me.username
         if lightning.query.user_id == bot.uid:
-          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Demon Master [{wews}](t.me/{weds})"
+          fck_bit = f"꧁ Pong! ꧂\n\n⚘ Ping Time:- {ping}\n\n⚘ My Lightning Master [{wews}](t.me/{weds})"
           await lightning.edit(fck_bit, link_preview=False, buttons=[Button.inline("Back", data="wtshit")])
         else: 
            await lightning.answer(f"I am {LIGHTNINGUSER}'s Assistant not your", alert=True)
@@ -510,7 +556,7 @@ async def yes_ucan(lightning):
     await lightning.get_chat()
     await asyncio.sleep(2)
     await lightning.edit("Get Lost Retard")
-    ban = "Get Lost Going To Block You \n hehe" 
+    ban = "Get Lost Goin To Block You" 
     await bot.send_message(
          lightning.query.user_id, ban)
     await bot(functions.contacts.BlockRequest(lightning.query.user_id))
@@ -543,10 +589,10 @@ async def lmaao(lightning):
             buttons=[
                 [custom.Button.inline("Help Menu😎", data="what?"),
                 custom.Button.inline("Ping🙃", data="bitch")],
-                [Button.url("Support Group🥺", "https://t.me/demon_ub_support")],
-                [Button.url("Creator🤓", "https://t.me/dooms_day_xd")],
+                [Button.url("Support Group🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Help Article🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
                 [Button.url("Get Updates😅",
-                    "https://t.me/demon_ub_support" ,
+                    "https://t.me/lightning_support_group" ,
                     )
                 ], 
             ]
@@ -556,7 +602,7 @@ async def lmaao(lightning):
         await lightning.answer(fukoff, alert=True)
 
 """
-end of the line
+Thanks To Friday Userbot and @Midhun_xD For This idea
 """
 import requests
 
@@ -572,8 +618,8 @@ async def ho(event):
     await event.answer("( ͡🔥 ͜ʖ ͡🔥)", cache_time=0, alert=False)
     # This Is Copy of Above Code. (C) @SpEcHiDe
     buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
-    ho = f"""DEMON UB Is Here With Stunning Help !\n
-In Case Any Problem [DEMON](https://t.me/demon_ub_support) \nTottal Plugs( ͡🔥 ͜ʖ ͡🔥): {len(CMD_LIST)}"""
+    ho = f"""Black Lightning Is Here With Stunning Help !\n
+In Case Any Problem [𝐁𝐥𝐚𝐜𝐤 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠](https://t.me/lightning_support_group) \nTottal Plugs( ͡🔥 ͜ʖ ͡🔥): {len(CMD_LIST)}"""
     await event.edit(message=ho, buttons=buttons)
 
 
